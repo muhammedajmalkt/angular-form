@@ -6,7 +6,7 @@ import studentRoutes from "./Routes/studentRouter.js";
 import cors from "cors"
 const app = express();
 
-const option={
+const option= {
     origin: ["http://localhost:3000","http://localhost:4200"],
     methods: ["GET", "POST", "PUT", "DELETE"], 
 }

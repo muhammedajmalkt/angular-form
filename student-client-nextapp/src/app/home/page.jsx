@@ -6,7 +6,7 @@ const Homepage = () => {
   return (
     <>
       <Navbar />
-      <main className="p-6">
+      <main className="p-6 ">
         <StudentTable />
 
       </main>  
