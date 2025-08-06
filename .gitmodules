@@ -1,0 +1,3 @@
+[submodule "angular-form"]
+	path = angular-form
+	url = https://github.com/muhammedajmalkt/angular-form.git
