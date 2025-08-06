@@ -1,0 +1,12 @@
+<div *ngIf="isOpen" class="modal-backdrop" >
+
+  <div class="modal-box">
+    <h2>Confirm Delete</h2>
+    <p>Are you sure you want to delete this student?</p>
+    
+    <div class="btn">
+      <button class="" (click)="handleCancel()">Cancel</button>
+      <button class="" (click)="handleConfirm()">Delete</button>
+    </div>
+  </div>
+</div>

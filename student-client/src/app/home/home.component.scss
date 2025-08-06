@@ -1,0 +1,39 @@
+.add-btn {
+    display: flex;
+    justify-content: end;
+    padding-bottom: 10px;
+}
+.add-btn button{
+    border: none;
+    padding: 0.8rem;
+    border-radius: 8px;
+}
+
+.table{
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  justify-content: center;
+//   background: #000;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.action {
+    display: flex;
+    gap: 20px;
+}
+.action button:first-child{
+     border: none;
+     padding: 0.6rem;
+     background: #bc1d1deb;
+     color: white;
+     border-radius: 3px;
+}
+.action button:nth-child(2){
+     border: none;
+     padding: 0.6rem;
+     background: #0c6518eb;
+     color: white;
+     border-radius: 3px;
+}

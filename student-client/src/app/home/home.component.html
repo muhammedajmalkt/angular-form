@@ -1,0 +1,45 @@
+<div class="table">
+  <h2 class="mb-3">Student List</h2>
+  
+  <div class="add-btn">
+    <button (click)="openAddStudentModal()" class="">Add Student</button>
+  </div>
+  
+  <table border="1" cellspacing="0" cellpadding="8">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        
+        <th>Age</th>
+        <th>Place</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students">
+        <td>{{ student.name }}</td>
+        <td>{{ student.email }}</td>
+        <td>{{ student.age }}</td>
+        <td>{{ student.place }}</td>
+        <td class="action">
+          <button (click)="confirmDelete(student._id)">Delete</button>
+  
+          <button (click)="updateStudent(student)">Update</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <app-student-form
+    *ngIf="isFormOpen"
+    [student]="selectedStudent"
+    (onClose)="closeModal()"
+  ></app-student-form>
+  
+  <app-confirm-delete
+    [isOpen]="isConfirmModalOpen"
+    (confirm)="handleDeleteConfirm()"
+    (cancel)="closeConfirmModal()"
+  > </app-confirm-delete>
+</div>

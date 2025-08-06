@@ -1,0 +1,18 @@
+<div class="modal-ovrly">
+  <div class="modal">
+    <h3 class="modal-title">{{ student ? 'Edit Student' : 'Add Student' }}</h3>
+
+    <form (ngSubmit)="submitForm()" class="form">
+      <input type="text" placeholder="Name" [(ngModel)]="formData.name" name="name" required />
+      <input type="email" placeholder="Email" [(ngModel)]="formData.email" name="email" required />
+      <input type="number" placeholder="Age" [(ngModel)]="formData.age" name="age" required />
+
+      <input type="text" placeholder="Place" [(ngModel)]="formData.place" name="place" required />
+
+      <div class="modal-actions">
+        <button type="submit">{{ student ? 'Update' : 'Add' }}</button>
+        <button type="button" (click)="onClose.emit()">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
