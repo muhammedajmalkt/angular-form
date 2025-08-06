@@ -4,9 +4,10 @@ This project contains a full-stack application setup with three key components:
 
 
 ##  How to Run
-### 1. Angular Frontend
 
 ```bash
+### 1. Angular Frontend
+
 cd student-client
 npm install
 npx ng serve
