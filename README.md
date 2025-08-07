@@ -24,4 +24,4 @@ npm run dev
 
 cd student-server
 npm install
-node src/server.js
+node server.js
