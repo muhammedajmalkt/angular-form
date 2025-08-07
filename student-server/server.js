@@ -1,8 +1,8 @@
 import express from "express";
 import mongoose from "mongoose";
 import "dotenv/config"
-import userRoutes from "./Routes/userRoute.js";
-import studentRoutes from "./Routes/studentRouter.js";
+import userRoutes from "./src/Routes/userRoute.js";
+import studentRoutes from "./src/Routes/studentRouter.js";
 import cors from "cors"
 const app = express();
 
@@ -12,6 +12,7 @@ const option= {
 }
 app.use(cors({origin:option}))
 app.use(express.json());
+
 
 mongoose.connect(process.env.MONGO_URI)
 .then(() => {
